@@ -1,2 +1,3 @@
-# AGREGAR README
-# AGREGAR RESETEO DE LOCALSTORAGE SI CAMBIO EL MES
+> agregar readme
+> agregar reseteo de localstorage si cambia el mes
+> agregar retorno de jsx de los componentes y funciones, y retorno de la funcion getDate
