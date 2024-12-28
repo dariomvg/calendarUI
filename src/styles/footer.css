@@ -1,0 +1,17 @@
+footer {
+    width: 100%;
+    padding: 10px;
+}
+
+footer p {
+    text-align: center;
+    color: #ddd;
+    font-size: 18px;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 16;
+    font-weight: 500;
+    color: #fff;
+}

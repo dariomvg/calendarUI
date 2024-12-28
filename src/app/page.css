@@ -1,0 +1,112 @@
+.page-calendar {
+  width: 100%;
+  height: 100vh;
+  background-color: #080808;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 999;
+  overflow-y: auto;
+}
+
+
+.title-calendar {
+  text-align: center;
+  color: #fff;
+}
+
+.title-month {
+  text-align: center;
+  color: #eee;
+}
+
+.title-day {
+  color: #fff;
+}
+
+.content-day {
+  color: #ddd;
+}
+
+.container-tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.header-td {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-td div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-day {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.icon-day:hover {
+  filter: drop-shadow(16px 16px 20px #9c9c9c) invert(30%);
+  transition: 0.5s;
+}
+
+tr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+table {
+  width: 80%;
+  margin: auto;
+}
+
+th,
+td {
+  border: 1px solid #0682f0;
+  width: 130px;
+  height: 100px;
+  padding: 5px;
+  overflow-y: auto;
+  transition: 0.5s;
+}
+
+.section-modal {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #101010f7;
+}
+
+@media (max-width: 768px) {
+  table {
+    width: 100%;
+  }
+  .page-calendar {
+    height: auto;
+  }
+  .section-modal {
+    height: 100%;
+    position: fixed;
+    transform: translateY(-130px);
+  }
+}
+
+@media (max-width: 425px) {
+    .section-modal {
+      transform: translateY(-330px);
+    }
+  }
