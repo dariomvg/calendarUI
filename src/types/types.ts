@@ -13,6 +13,11 @@ export interface Days {
   content: ContentDay[];
 }
 
+export interface LocalDaysTypes {
+  title: string; 
+  days: Days[]
+}
+
 export interface HookTypes {
   currentDate: Month;
   active: boolean;
@@ -25,7 +30,7 @@ export interface HookTypes {
   addTask: (task: string, id: number) => void;
   idDay: number ;
   deleteTask: (idTask: number, idMain: number) => void;
-  localDays: Days[];
+  localDays: LocalDaysTypes;
 }
 
 export interface PropsListTasks {
@@ -39,3 +44,4 @@ export interface PropsModalDay {
   closeModal: () => void;
   addTask: (task: string, id: number) => void;
 }
+

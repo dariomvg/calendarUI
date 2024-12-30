@@ -7,8 +7,9 @@ import { ModalDay } from "@/components/ModalDay";
 import { ListTasks } from "@/components/ListTasks";
 import { Loader } from "@/components/Loader";
 import { Footer } from "@/components/Footer";
+import { JSX } from "react";
 
-export default function Home() {
+export default function Home(): JSX.Element {
   const {
     currentDate,
     active,
@@ -32,7 +33,7 @@ export default function Home() {
         <tbody>
           <tr>
             {currentDate.days &&
-              localDays.slice(0, currentDate.days).map((day) => (
+              localDays.days.slice(0, currentDate.days).map((day) => (
                 <td key={day.id}>
                   <div className="header-td">
                     <p className="title-day">{day.id}</p>

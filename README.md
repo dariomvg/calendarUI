@@ -1,3 +1,7 @@
-> agregar readme
-> agregar reseteo de localstorage si cambia el mes
-> agregar retorno de jsx de los componentes y funciones, y retorno de la funcion getDate
+# CalendarUI  
+
+> Puedes organizar tus días, semanas o tu mes completo, agregando tus tareas, proyectos, etc.  
+
+- NextJS  
+- Typescript  
+- Css  

@@ -2,8 +2,9 @@
 import { PropsModalDay } from "@/types/types";
 import "@/styles/modal-day.css";
 import { FormEvent, useState } from "react";
+import { JSX } from "react";
 
-export const ModalDay = ({ id, closeModal, addTask }: PropsModalDay) => {
+export const ModalDay = ({ id, closeModal, addTask }: PropsModalDay): JSX.Element => {
   const [form, setForm] = useState<string>("");
 
   const submitForm = (e: FormEvent<HTMLFormElement>) => {

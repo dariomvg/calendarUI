@@ -1,6 +1,7 @@
 import "@/styles/footer.css";
+import { JSX } from "react";
 
-export const Footer = () => {
+export const Footer = (): JSX.Element => {
 
 
     return <footer>
