@@ -2,6 +2,7 @@ export interface Month {
   name: string;
   year: number;
   days: number;
+  firstDay: number
 }
 interface ContentDay {
   id: number ;
@@ -11,11 +12,6 @@ interface ContentDay {
 export interface Days {
   id: number ;
   content: ContentDay[];
-}
-
-export interface LocalDaysTypes {
-  title: string; 
-  days: Days[]
 }
 
 export interface HookTypes {
@@ -30,7 +26,7 @@ export interface HookTypes {
   addTask: (task: string, id: number) => void;
   idDay: number ;
   deleteTask: (idTask: number, idMain: number) => void;
-  localDays: LocalDaysTypes;
+  localDays: Days[];
 }
 
 export interface PropsListTasks {

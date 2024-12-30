@@ -33,7 +33,7 @@ export default function Home(): JSX.Element {
         <tbody>
           <tr>
             {currentDate.days &&
-              localDays.days.slice(0, currentDate.days).map((day) => (
+              localDays.slice(0, currentDate.days).map((day) => (
                 <td key={day.id}>
                   <div className="header-td">
                     <p className="title-day">{day.id}</p>

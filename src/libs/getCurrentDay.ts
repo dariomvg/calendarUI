@@ -5,6 +5,7 @@ export const getDate = (date: Date): Month => {
 
   const year = date.getFullYear();
   const month = date.getMonth();
+  const firstDay = date.getDate();
 
   const nameMonth = months[month];
   const numberDays = new Date(year, month + 1, 0).getDate();
@@ -13,5 +14,6 @@ export const getDate = (date: Date): Month => {
     name: nameMonth,
     year,
     days: numberDays,
+    firstDay,
   };
 };
